@@ -2,6 +2,10 @@
 
 import { faker } from '@faker-js/faker';
 
+beforeEach(() => {
+     cy.screenshot()
+});
+
 class CadastroPage {
     get #firstname() { return cy.get('[data-testid="firstName"]')}
     get #lastname() { return cy.get('[data-testid="lastName"]')}
