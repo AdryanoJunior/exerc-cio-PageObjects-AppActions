@@ -9,9 +9,8 @@
   "author": "Adryano Junior",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^13.13.0",
+    "cypress": "^13.13.2",
     "puppeteer": "^22.13.1"
-    
   },
   "devDependencies": {
     "@faker-js/faker": "^8.4.1"
