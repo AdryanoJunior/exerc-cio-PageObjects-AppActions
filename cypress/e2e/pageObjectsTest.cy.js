@@ -25,5 +25,9 @@ beforeEach(() => {
       carrinhoPage.addProduct()
       
     });
+
+    beforeEach(() => {
+      cy.screenshot()
+    });
   
   })
