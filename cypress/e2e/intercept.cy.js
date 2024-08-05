@@ -11,7 +11,6 @@ describe('Teste de Autenticação', () => {
 beforeEach(() => {
   cy.setCookie('ebacStoreVersion', 'v2', { domain: 'lojaebac.ebaconline.art.br' })
   cy.visit('/')
-
 });
 
   it('Deve fazer o cadastro com sucesso', () => {
@@ -22,12 +21,9 @@ beforeEach(() => {
     });
 
     it('Deve adicionar um produto ao carrinho', () => {
+      cy.intercept('GET', '**/public/getProducts?limit=10&skip=0', {fixture: 'products.json'} ).as('GetProducts')
       carrinhoPage.addProduct()
       
-    });
-
-    beforeEach(() => {
-      cy.screenshot()
     });
   
   })
