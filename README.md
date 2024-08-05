@@ -1,1 +1,1 @@
-# exerc-cio-PageObjects-AppActions
+Utilizando relatórios e Intercept nas suítes de testes
