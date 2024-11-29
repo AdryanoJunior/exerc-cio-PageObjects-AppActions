@@ -9,7 +9,7 @@ module.exports = defineConfig({
     reporter: 'mochawesome',
     reporterOptions: {
       reportFilename: "[name]-result",
-      html: false
+      html: true
     }
   },
 });
